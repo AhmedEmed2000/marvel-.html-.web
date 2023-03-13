@@ -1,0 +1,241 @@
+ul{
+    display: lex;
+}
+ul li{
+    transition: 0.5s;
+    direction: center;
+}
+ul li a{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.5;
+}
+ul:hover li a{
+    transform: scale(1.5);
+    opacity: 0.2;
+    filter: blur(5px);
+}
+ul li a:hover {
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+    text-decoration: none;
+    color: #000;
+}
+ul li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 0, 0);
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+}
+ul li a:hover:before {
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+body{
+    background-color: #000;
+}
+.ahmed4{
+    top: 100%;
+    font-size: 72px;
+    background: linear-gradient(270deg, #3f5efb, #fc466b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+padding: 0;
+margin: 0;
+font-family: sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    font-weight: normal;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+d1,
+dd,
+menu,
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ol{
+    list-style-type: decimal;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+}
+.slider{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    transition: all 0.5;
+    overflow: hidden;
+}
+.slider .slide {
+    width: 20%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    transition: 0.5;
+}
+.slider .slide:nth-child(1){
+    background: url("https://wallpaperaccess.com/full/804263.jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.slider .slide:nth-child(2){
+    background: url("https://wallpapercave.com/wp/wp6198499.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.slider .slide:nth-child(3){
+    background: url("https://cdn.wallpapersafari.com/22/21/P9TnWz.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.slider .slide:nth-child(4){
+    background: url("https://wallpaperaccess.com/full/3988477.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.slider .slide:nth-child(5){
+    background: url("https://www.teahub.io/photos/full/282-2826949_free-download-the-avengers-wallpaper-id-loki-wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.slider .slide:hover {
+    width: 60%;
+    cursor: pointer;
+}
+.ahmed6{
+    position: absolute;
+    bottom: -500;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width 350px;
+    height 420px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+.ahmed6 p{
+    font-family:'Courier New', Courier, monospace;
+    color: #000;
+}
+.ahmed6 h1{
+    color: #fff;
+    font-size: large;
+}
+.ahmed7 input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    max-width: 110rem;
+    padding: 1.5rem;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit; minmax(20rem, 1fr));
+    grid-gap: 1.5rem;
+}
+.card{
+    background: #262525;
+    color: #fff;
+    padding: 1.5rem;
+    overflow: hidden;
+    border-radius: 0.8rem;
+}
+.card-title-large{
+    font-family: fantasy, sans-serif;
+    font-size: 10rem
+    letter-spacing 0.5rem;
+    color: #1d1d1d;
+    transform: translateX(7rem);
+    transform: transform 2.5s;
+}
+.card-title-small{
+    margin-bottom: 1rem;
+}
+.card-description{
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+.card-cat{
+    display: inline-block;
+    width: 3.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-left: auto;
+}
+.card:hover .card-cat{
+    background-color: #262525;
+}
+.card.twitter:hover{
+    background-color: #1da1f2;
+}
+.card.instagram:hover{
+    background: radial-gradient(
+    at 20% 128%,
+    #feda78 20%,
+    #e23467 60%,
+    #ac2bb3 90%
+    );
+}
+.card.facebook:hover{
+    background-color: #4267b2;
+}
+.card.youtube:hover{
+    background-color: #ff074f;
+}
